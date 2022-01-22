@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(/images/background.jpg);
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow: hidden;
+}
+
+/* --------------logo---------------- */
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    left: 44px;
+    top: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo div {
+    text-align: center;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 28px;
+    line-height: 17px;
+}
+
+/* -----------links------------- */
+
+.links {
+    display: block;
+    width: 43%;
+    margin: 29px auto;
+}
+
+.elements {
+    display: inline-block;
+}
+
+.elements li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.elements li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.elements li a:hover,
+.elements li a.active {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+/* -----------CTA----------- */
+
+.CTA {
+    position: absolute;
+    right: 34px;
+    top: 43px;
+    display: inline-block;
+}
+
+/* ---------------Form------------- */
+
+.container {
+    border: 2px solid white;
+    margin: 72px 84px;
+    padding: 35px 59px;
+    width: 31%;
+    border-radius: 18px;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 317px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Indie Flower', cursive; 
+
+}
+
+.container h1 {
+    text-align: center;
+
+}
+
+.container .btn{
+    display: block;
+    width: 74%;
+    margin: auto;
+    text-align: center;
+}
+
+/* ------------Utility----------- */
+
+.btn {
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+}
+
+.btn :hover {
+    background-color: gray;
+}
