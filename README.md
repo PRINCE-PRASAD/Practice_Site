@@ -1,12 +1,9 @@
 
 # Practice Webpages
 This repository contains just basic type of sites that is built by me.
-<<<<<<< HEAD
 This repoisitory only helpful for preson who just begain to learn webdevelovment amd don't want to built a heavy landing page.
-=======
 This repository only helpful for preson who just begain to learn webdevelovment and don't want to built a heavy landing page.
->>>>>>> de7c2b58f6a35fed5f483f5ae9c7fdf43893af35
- In this Webpages i only use three languages like HTML,CSS and JAVA.
+ In this Webpages i only use three languages like HTML,CSS and JAVASCRIPT.
 
 
 ## Webpage #1
