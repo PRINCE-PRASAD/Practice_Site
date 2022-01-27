@@ -51,7 +51,7 @@ html{
 }
 #navbar ul li a{
    display: block;
-   color: white;
+   color: gray;
    padding: 3px 22px;
    border-radius: 20px;
    text-decoration: none;
@@ -118,7 +118,7 @@ text-align: center;
 
 /* game section */
 
-#games-section{
+#game-section{
     /* height: 344px; */
     position: relative;
 }
