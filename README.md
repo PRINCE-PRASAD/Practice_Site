@@ -13,7 +13,7 @@ For more information click on repository...
 ![App Screenshot](https://github.com/PRINCE-PRASAD/Practice_Site/blob/main/Hacker_Hangout_Login_Page/images/Web_Output.png?raw=true)
 
 ## Webpage #2
-This is a login page for Hacker Hangout Community. 
+This is a login page for Gaming Hangout Community. 
 For more information click on repository...
 
 
