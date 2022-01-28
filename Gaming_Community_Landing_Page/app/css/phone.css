@@ -1,0 +1,59 @@
+/* --------------
+Navigation
+-----------------*/
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0rem 0.438rem;
+    padding-bottom: 0.5rem;
+}
+
+/* --------------
+Home Section
+-----------------*/
+
+#home{
+height: 23.125rem;
+padding: 0.188rem 1.75rem;
+}
+#home::before{
+    height: 30rem;
+}
+#home p{
+    font-size: 0.813rem;
+}
+
+/* --------------
+ Featured Games
+-----------------*/
+
+#services{
+    flex-direction: column;
+}
+services .box{
+    padding: 0.875rem;
+    margin: 0.125rem 0rem;
+    margin-bottom: 1.25rem;
+}
+
+/* --------------
+   Contact US
+-----------------*/
+
+#contact-box form{
+    width: 80%;
+}
+
+/* --------------
+Utility classes
+-----------------*/
+.h-primary{
+    font-size: 1.625rem;
+}
+.btn{
+    font-size: 0.813rem;
+    padding: 0.25rem 0.50rem;
+}

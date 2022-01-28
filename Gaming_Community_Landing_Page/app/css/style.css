@@ -1,0 +1,385 @@
+/* --------------
+CSS reset
+-----------------*/
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------------
+Navigation Bar
+-----------------*/
+
+/*Navigation Bar: logo and image */
+#logo{
+    margin: 0.625rem 2.125rem;
+}
+#logo img{
+    margin: 0.188rem 0.375rem;
+    height: 5.75rem;
+}
+/* Navigation Bar : List Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 111%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    padding: 0.188rem 1.375rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* --------------
+Home Section 
+-----------------*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0.188rem 12.5rem;
+    align-items: left;
+    height: 34.375rem;
+    padding: 4.313rem;
+}
+#home::before{
+    content: "";
+    background: url(/images/background.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0rem;
+    left: 0rem;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: left;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    padding: 8.75rem 0rem 0rem 0rem;
+}
+#home p{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+#home button {
+    margin: 1.688rem auto auto 0rem;
+}
+
+/* --------------
+Services Section 
+-----------------*/
+
+#services{
+    margin: 2.125rem;
+    display: flex;
+}
+#services .box{
+    border: 0.25rem solid brown;
+    padding: 2.125rem;
+    margin: 0.125rem 3.438rem;
+    border-radius: 1.75rem;
+    background-color: rgb(216, 210, 210);
+    margin-bottom: 1.25rem;
+}
+#services .box img{
+    height: 10rem;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* --------------
+Contact Section 
+-----------------*/
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: #b3cdd1;
+    background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.313rem;
+    border-radius: 0.563rem;
+    font-size: 1.1rem;
+    background-color: #b3cdd1;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.125rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* --------------
+Footer Section 
+-----------------*/
+
+footer{
+    background: black;
+    padding: 1.813rem;
+}
+
+.footer {
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+@media (min-width: 64em) {
+    .footer .container {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 2fr 1fr 1fr 3fr;
+                grid-template-columns: 2fr 1fr 1fr 3fr;
+            -ms-grid-rows: 1fr auto;
+                grid-template-rows: 1fr auto;
+                grid-template-areas: "logo links1 links2 cta"
+        "social links1 links2 copyright";
+            gap: 1rem;
+            justify-items: start;
+    }
+}
+
+.footer__logo {
+    display: inline-block;
+}
+
+@media (max-width: 63.9375em) {
+    .footer__logo {
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .footer__logo {
+        grid-area: logo;
+    }
+}
+
+@media (max-width: 63.9375em) {
+    .footer__social {
+        /* margin-bottom: 1.875rem; */
+        margin: -1.063rem 2.063rem 0.875rem 1.688rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .footer__social {
+        grid-area: social;
+        margin: 1.375rem 0rem 0rem 1.625rem;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end;
+    }
+}
+
+.footer__social a {
+    display: inline-block;
+    height: 1.25rem;
+}
+
+.footer__social a svg path {
+    -webkit-transition: fill 150ms ease-in-out;
+    transition: fill 150ms ease-in-out;
+}
+
+.footer__social a:hover svg path {
+    fill: #31d35c;
+}
+
+.footer__social a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+    .footer__links {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+}
+
+@media (min-width: 64em) {
+    .footer__links.col1 {
+        grid-area: links1;
+    }
+}
+
+@media (max-width: 63.9375em) {
+    .footer__links.col2 {
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .footer__links.col2 {
+        grid-area: links2;
+    }
+}
+
+.footer__links a{
+    color: white;
+    padding: 0.188rem 1.375rem;
+    border-radius: 1.25rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.footer__links a:hover{
+    color: black;
+    background-color: white;
+}
+
+@media (min-width: 64em) {
+    .footer__cta {
+        grid-area: cta;
+        text-align: right;
+        -ms-grid-column-align: end;
+            justify-self: end;
+    }
+}
+
+@media (max-width: 63.9375em) {
+    .footer__cta a.button {
+        margin-bottom: 1.875rem;
+    }
+}
+
+.footer__copyright {
+    font-size: 0.8125rem;
+    color: #9698a6;
+    margin: 2.125rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+@media (min-width: 64em) {
+    .footer__copyright {
+        grid-area: copyright;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end;
+        -ms-grid-column-align: end;
+            justify-self: end;
+    }
+}
+
+/* --------------
+Utility classes
+-----------------*/
+
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 0.75rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+/* --------------
+    CTA
+-----------------*/
+
+.button{
+    margin-top: 1.875rem;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+    border-radius: 0.625rem;  
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.button-white{
+    margin-top: 1.875rem;
+    color: white;
+    border: none;
+    border-radius: 0%;
+    padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+}
+  
+  
+.button:hover{
+    margin-top: 1.875rem;
+    background: #6bf076;
+    border: none;
+    border-radius: 0%;
+    padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+    border-radius: 0.625rem;  
+}
