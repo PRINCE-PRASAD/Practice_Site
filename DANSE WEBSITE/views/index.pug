@@ -1,0 +1,30 @@
+//- index.pug
+doctype html
+html
+  head
+    title Kolkata Dance Academy
+    style
+      include ../public/style.css
+  body
+     nav#navbar 
+         ul 
+             li #[a(href="/") Home]
+             li #[a(href="/") About]
+             li #[a(href="/") Services]
+             li #[a(href="/") Class Info]
+             li #[a(href="/") Contact Us]
+ 
+     section#introSection 
+         div Welcome to Kolkata's Dance Academy 
+         div.small Eat Sleep Dance Repeat
+
+     section#sponsorsSection 
+         h2 Our Sponsors 
+          
+     section#missionSection 
+         h2 Our Mission 
+ 
+     section#footer 
+         | our footer here                                                      
+     script
+       include ../public/index.js
